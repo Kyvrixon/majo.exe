@@ -37,7 +37,10 @@ jspm_packages/
 *.zip
 
 # dotenv environment variables file
-.env*
+.env
+!/apps/bot/.env
+!/apps/dashboard/.env
+!/packages/database/.env
 !.env.example
 
 # Stores VSCode versions used for testing VSCode extensions
