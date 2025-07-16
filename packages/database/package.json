@@ -10,6 +10,7 @@
   },
   "scripts": {
     "deploy": "dotenvx run -- prisma migrate deploy",
+    "deploy:nodotenvx": "prisma migrate deploy",
     "prisma:generate": "dotenvx run -- prisma generate --no-hints",
     "prisma:migrate": "dotenvx run -- prisma migrate dev",
     "prisma:format": "prisma format",

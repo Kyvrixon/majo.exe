@@ -20,6 +20,12 @@
    "env": ["DATABASE_URL", "DATABASE_URL_UNPOOLED", "REDIS_URL", "TOKEN", "CLIENT_ID", "TOPGG_API_KEY", "DISCORD_BOT_LIST_API_KEY"],
    "persistent": true
   },
+  "deploy:nodotenvx": {
+   "dependsOn": ["^build:nodotenvx"],
+   "outputs": [".next/**", "!.next/cache/**"],
+   "env": ["DATABASE_URL", "DATABASE_URL_UNPOOLED", "REDIS_URL", "TOKEN", "CLIENT_ID", "TOPGG_API_KEY", "DISCORD_BOT_LIST_API_KEY"],
+   "persistent": true
+  },
   "lint": {
    "dependsOn": ["^format:check"],
    "outputs": []
